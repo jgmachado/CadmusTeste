@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus", "Cadmus\Cadmus.csproj", "{97988066-A17B-4A16-8E79-793D1A36AF4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.Entities", "Cadmus.Entities\Cadmus.Entities.csproj", "{595BDA79-49E8-4310-BB64-E376E692358E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.Business", "Cadmus.Business\Cadmus.Business.csproj", "{A70F00E6-FB4A-44F9-A482-387254A7C94E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.DataAccess", "Cadmus.DataAccess\Cadmus.DataAccess.csproj", "{2DD1B465-CDAC-414A-832A-9BC1C6A8C236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.WCF.Logic", "Cadmus.WebServices.Logic\Cadmus.WCF.Logic.csproj", "{26F48221-8139-43FB-8799-102DF5E6DCBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.WCF", "Cadmus.WCF\Cadmus.WCF.csproj", "{66148D25-C14F-4330-9B99-83A2CCF453BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97988066-A17B-4A16-8E79-793D1A36AF4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97988066-A17B-4A16-8E79-793D1A36AF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97988066-A17B-4A16-8E79-793D1A36AF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97988066-A17B-4A16-8E79-793D1A36AF4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595BDA79-49E8-4310-BB64-E376E692358E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595BDA79-49E8-4310-BB64-E376E692358E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595BDA79-49E8-4310-BB64-E376E692358E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595BDA79-49E8-4310-BB64-E376E692358E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A70F00E6-FB4A-44F9-A482-387254A7C94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A70F00E6-FB4A-44F9-A482-387254A7C94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A70F00E6-FB4A-44F9-A482-387254A7C94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A70F00E6-FB4A-44F9-A482-387254A7C94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD1B465-CDAC-414A-832A-9BC1C6A8C236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD1B465-CDAC-414A-832A-9BC1C6A8C236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD1B465-CDAC-414A-832A-9BC1C6A8C236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD1B465-CDAC-414A-832A-9BC1C6A8C236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F48221-8139-43FB-8799-102DF5E6DCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F48221-8139-43FB-8799-102DF5E6DCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F48221-8139-43FB-8799-102DF5E6DCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F48221-8139-43FB-8799-102DF5E6DCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66148D25-C14F-4330-9B99-83A2CCF453BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66148D25-C14F-4330-9B99-83A2CCF453BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66148D25-C14F-4330-9B99-83A2CCF453BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66148D25-C14F-4330-9B99-83A2CCF453BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

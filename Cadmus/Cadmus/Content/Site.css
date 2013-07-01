@@ -1,0 +1,146 @@
+﻿body
+{
+  font-family: Verdana, Arial, Sans-Serif;
+  font-size: 11px;
+}
+
+h1
+{
+  font-size: 15px;
+}
+
+.LabelCell
+{
+  background-color: #507cd1;
+  color: #fff;
+  font-weight: bold;
+  width: 120px;
+  vertical-align: top;
+}
+
+fieldset
+{
+  padding: 20px;
+  padding-top: 0; /*  Fix issue in IE where padding-top is not applied. Add margin to legend instead */
+}
+
+legend
+{
+  margin-bottom: 10px;
+}
+
+.Label
+{
+  display: block;
+  font-weight: bold;
+}
+
+/* GridView Skin settings */
+
+.FooterStyle
+{
+  background-color: #507CD1;
+  color: #fff;
+  font-weight: bold;
+}
+ 
+.SelectedRowStyle 
+{
+  color: #507cd1;
+}
+
+.PagerStyle 
+{
+  background-color: #2461BF;
+  color: #fff;
+  text-align: center;
+}
+
+th 
+{
+  background-color: #507CD1;
+  color: #fff;
+  font-weight: bold;
+}
+
+td
+{
+  padding: 5px;
+}
+
+.link
+{
+text-decoration: underline;
+cursor: pointer;
+}
+
+#details
+{ 
+  padding-top: 10px;
+}
+
+.table{border-collapse: collapse;
+}
+.ui-datepicker
+{
+  margin-left: 200px;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu
+{
+    border-bottom: 1px #5C87B2 solid;
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: left;
+}
+
+ul#menu li
+{
+    display: inline;
+    list-style: none;
+}
+
+ul#menu li#greeting
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+ul#menu li a
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #e8eef4;
+    color: #034af3;
+}
+
+ul#menu li a:hover
+{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+ul#menu li a:active
+{
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+ul#menu li.selected a
+{
+    background-color: #fff;
+    color: #000;
+}
+
+#menucontainer
+{
+    margin-top:40px;
+}

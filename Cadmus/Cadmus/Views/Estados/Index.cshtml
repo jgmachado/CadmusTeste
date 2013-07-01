@@ -1,0 +1,129 @@
+﻿@model Cadmus.Entities.Collections.EstadosList
+@{
+    ViewBag.Title = "Lista de Estados";
+}
+<!DOCTYPE html>
+<script type="text/javascript">
+    $(function () {
+        // row colours
+        $('tr:even').css('background-color', '#EFF3FB');
+        $('tr:odd').css('background-color', '#FFFFFF');
+        // selected row managment
+        $('tr').click(function () {
+            $('tr').each(function () {
+                $(this).removeClass('SelectedRowStyle');
+            });
+            $(this).addClass('SelectedRowStyle');
+        });
+        // hide the dialog div
+        $('#dialog').hide();
+        // set up ajax to prevent caching of results in IE
+        $.ajaxSetup({ cache: false });
+        // add an onclick handler to items with the "link" css class
+        $('.link').live('click', function (event) {
+            var id = $.trim($('td:first', $(this).parents('tr')).text());
+            var loc = $(this).attr('title');
+            // check to ensure the link is not a delete link
+            if (loc.lastIndexOf('delete') == -1) {
+                $.get(loc + '/' + id, function (data) {
+                    $('#details').html(data);
+                });
+                // if it is, show the modal dialog   
+            } else {
+                $('#dialog').dialog({
+                    buttons: {
+                        'Confirm': function () {
+                            window.location.href = loc + '/' + id;
+                        },
+                        'Cancel': function () {
+                            $(this).dialog('close');
+                        }
+                    }
+                });
+                $('#dialog').dialog('open');
+            }
+        });
+        // add an onclick event handler to the add contact button
+        $('#add').click(function () {
+            $.get('Estados/Create', function (data) {
+                $('#details').html(data);
+            });
+        });
+    });
+</script>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                Código
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                País
+            </th>
+            <th>
+                Região
+            </th>
+            <th>
+                Sigla
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+        </tr>
+        @{
+            if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+            <tr>
+                <td>
+                    @item.Codigo
+                </td>
+                <td>
+                    @item.Nome
+                </td>
+                <td>
+                    @item.Pais
+                </td>
+                <td>
+                    @item.Regiao
+                </td>
+                <td>
+                    @item.Sigla
+                </td>
+                <td title="estados/edit" class="link">
+                    Editar
+                </td>
+                <td title="estados/delete" class="link">
+                    Deletar
+                </td>
+            </tr>
+                }
+            }
+            else
+            {
+            <tr>
+                <td colspan="7">
+                    Nenhum registro cadastrado
+                </td>
+            </tr>
+            }
+        }
+    </table>
+    <p>
+        <input type="button" name="add" value="Novo Estado" id="add" />
+    </p>
+    <div id="details">
+    </div>
+    <div id="dialog" title="Confirmação">
+        Apagar este estado?</div>
+</body>
+</html>

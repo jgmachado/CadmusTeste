@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Cadmus.WebServices.Cadmus" CodeBehind="Cadmus.svc.cs" %>
